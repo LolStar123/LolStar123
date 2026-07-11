@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <style>
+    .svc  { opacity: 0; animation: rise 0.7s cubic-bezier(0.2,0,0,1) forwards; }
+    .s1 { animation-delay: 0.5s; } .s2 { animation-delay: 0.9s; } .s3 { animation-delay: 1.3s; } .s4 { animation-delay: 1.7s; }
+    .dot1 { animation: pulse 2.6s ease-in-out 1.4s infinite; transform-origin: 688px 95px; }
+    .dot2 { animation: pulse 2.6s ease-in-out 2.0s infinite; transform-origin: 688px 145px; }
+    .dot3 { animation: pulse 2.6s ease-in-out 2.6s infinite; transform-origin: 688px 195px; }
+    .caret { animation: blink 1.1s steps(1) infinite; }
+    @keyframes rise  { to { opacity: 1; } }
+    @keyframes blink { 0%,55% { opacity: 1; } 56%,100% { opacity: 0; } }
+    @keyframes pulse { 0%,100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(2.6); opacity: 0; } }
+  </style>
+
+  <rect width="1200" height="300" fill="#ffffff"/>
+
+  <!-- name block -->
+  <text x="64" y="128" font-size="58" font-weight="700" letter-spacing="-1.2" fill="#1f2328">Atul Kanodia</text>
+  <text x="66" y="168" font-size="20" fill="#59636e">Economics @ UCL &#183; London</text>
+  <text x="66" y="198" font-size="20" fill="#59636e">I build autonomous systems- markets, content, daily ops.</text>
+
+  <!-- terminal line -->
+  <g font-family="Consolas, 'Cascadia Code', monospace" font-size="16">
+    <text x="66" y="246" fill="#6e7681">$</text>
+    <text x="84" y="246" fill="#1f2328">python run.py --autonomous</text>
+    <rect class="caret" x="330" y="233" width="9" height="17" fill="#bf8700"/>
+  </g>
+
+  <!-- service status readout -->
+  <line x1="648" y1="56" x2="648" y2="244" stroke="#1f2328" stroke-opacity="0.12" stroke-width="1"/>
+  <g font-family="Consolas, 'Cascadia Code', monospace" font-size="16">
+    <g class="svc s1">
+      <circle class="dot1" cx="688" cy="95" r="5" fill="#1a7f37"/>
+      <circle cx="688" cy="95" r="5" fill="#1a7f37"/>
+      <text x="712" y="101" fill="#1f2328">baxter</text>
+      <text x="854" y="101" fill="#1a7f37">active</text>
+      <text x="944" y="101" fill="#6e7681">watching 4 inboxes</text>
+    </g>
+    <g class="svc s2">
+      <circle class="dot2" cx="688" cy="145" r="5" fill="#1a7f37"/>
+      <circle cx="688" cy="145" r="5" fill="#1a7f37"/>
+      <text x="712" y="151" fill="#1f2328">reels-factory</text>
+      <text x="854" y="151" fill="#1a7f37">active</text>
+      <text x="944" y="151" fill="#6e7681">QC green</text>
+    </g>
+    <g class="svc s3">
+      <circle class="dot3" cx="688" cy="195" r="5" fill="#bf8700"/>
+      <circle cx="688" cy="195" r="5" fill="#bf8700"/>
+      <text x="712" y="201" fill="#1f2328">backtests</text>
+      <text x="854" y="201" fill="#bf8700">running</text>
+      <text x="944" y="201" fill="#6e7681">58 stress sets</text>
+    </g>
+    <g class="svc s4">
+      <text x="688" y="243" fill="#6e7681" font-size="14">uptime: most of the time</text>
+    </g>
+  </g>
+</svg>
