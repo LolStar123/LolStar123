@@ -1,11 +1,17 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Atul Kanodia- Economics @ UCL, London. I build autonomous systems- markets, content, daily ops." width="100%">
+  <img src="assets/banner-light.svg" alt="Atul Kanodia- systems that ingest, model, verify, and release across four featured builds." width="100%">
 </picture>
 
-Economics student who ships end-to-end systems: ingestion, models, governance,
-and the surface on top. The common thread is **autonomy with proof**- pipelines
-that verify their own output before anyone trusts it.
+# Systems that leave evidence
+
+This is the source for my GitHub profile and an index of four end-to-end systems.
+They turn messy external inputs into useful actions, media, experiments, or ratings.
+The difficult part is the layer between those points: constrained models, replayable
+data, independent checks, and human release gates.
+
+I study Economics at UCL and build the engineering around decisions that need to be
+explainable after the run, not just impressive during it.
 
 ## Featured builds
 
@@ -15,24 +21,22 @@ that verify their own output before anyone trusts it.
 
 ### [Baxter](https://github.com/LolStar123/baxter)
 
-An autonomous chief-of-staff running 24/7 on my PC. Reads 4 inboxes (Gmail x3,
-Discord, WhatsApp, voice), triages into an Obsidian vault, and **builds its own
-features**- gated by a two-model PRD process, a usage governor, and a verify
-layer that treats "done" as a claim, not a fact.
+A personal chief-of-staff that pulls Gmail, Discord, WhatsApp, and voice notes
+into one triage loop. A PRD gate controls self-directed builds; a separate
+verifier checks completion claims before release.
 
-`~48k lines core` `112 test files` `0 unsupervised sends`
+`multi-channel intake` `gated builds` `independent verify`
 
 </td>
 <td width="50%" valign="top">
 
 ### [Reels Factory](https://github.com/LolStar123/reels-factory)
 
-A research pipeline that happens to publish to Instagram: reads quant papers,
-backtests them walk-forward on real data, renders the result as a voiced,
-captioned 9:16 reel. Two independent honesty gates; nothing posts without a
-human `APPROVE`.
+Turns a quant paper and market data into a backtested, voiced, captioned vertical
+reel. Constrained strategy extraction, pixel-level QC, claim checking, and a
+human decision file stand between research and publishing.
 
-`34 modules` `4-engine TTS chain` `red-teamed QC`
+`paper -> strategy` `4-engine voice chain` `approval required`
 
 </td>
 </tr>
@@ -41,30 +45,75 @@ human `APPROVE`.
 
 ### [Markets Backtesting](https://github.com/LolStar123/markets-backtesting)
 
-Walk-forward harness implementing **50 trading signals, each cited to an
-academic paper**, ranked honestly across full history *and* an out-of-sample
-crisis window. Built under a hackathon deadline.
+Runs 50 paper-traced signals through one walk-forward engine and writes
+comparable risk metrics. In the published run, Conditional Risk Parity recorded
+a 0.758 WF1 Sharpe and +1.96% in the held-out window.
 
-`pandas` `walk-forward` `50 cited signals`
+`50 signals` `2 evaluation windows` `ranked metrics`
 
 </td>
 <td width="50%" valign="top">
 
 ### [TfL Reliability](https://github.com/LolStar123/tfl-reliability)
 
-Live pipeline polling Transport for London's API, storing every status
-snapshot, and rating each Tube line with an **Elo-style reliability score**.
-ETL → event detection → rating model → dashboard.
+Collects Tube status snapshots into SQLite, detects changes, and reranks lines
+with event-driven Elo-style updates. Ratings derive from stored snapshots, so
+the same history can be replayed with new parameters.
 
-`TfL API` `SQLite` `Elo ratings`
+`TfL Unified API` `SQLite history` `replayable ratings`
 
 </td>
 </tr>
 </table>
 
-## Toolbox
+## One operating pattern, four outputs
 
-`Python` · `pandas` / `numpy` · `PowerShell` · `SQLite` · `matplotlib` · `Streamlit` ·
-REST APIs · ffmpeg · a growing fleet of supervised AI agents
+```mermaid
+flowchart LR
+    subgraph inputs["External evidence"]
+        I1["Messages"]
+        I2["Papers + market data"]
+        I3["Paper-traced signals"]
+        I4["TfL status feeds"]
+    end
+    subgraph systems["System under test"]
+        S1["Baxter<br/>triage + orchestration"]
+        S2["Reels Factory<br/>constrain + backtest"]
+        S3["Markets<br/>shared walk-forward engine"]
+        S4["TfL Reliability<br/>snapshot + event detection"]
+    end
+    subgraph proof["Proof before output"]
+        P1["Independent verifier<br/>approved action"]
+        P2["Fact-check + pixel QC<br/>approval-pending reel"]
+        P3["Comparable metrics<br/>ranked CSV"]
+        P4["Replayable scoring<br/>rating CSV"]
+    end
+    I1 --> S1 --> P1
+    I2 --> S2 --> P2
+    I3 --> S3 --> P3
+    I4 --> S4 --> P4
+```
 
-📫 **atulswaggalicious@gmail.com**
+## Working set
+
+`Python` / `pandas` / `numpy` / `PowerShell` / `SQLite` / `Streamlit` /
+REST APIs / `ffmpeg`
+
+## Inspect locally
+
+This repository is the profile source, not an application. The complete local
+inspection path is:
+
+```powershell
+git clone https://github.com/LolStar123/LolStar123.git
+cd LolStar123
+git ls-files
+```
+
+`README.md` holds the profile; [`assets/banner-dark.svg`](assets/banner-dark.svg)
+and [`assets/banner-light.svg`](assets/banner-light.svg) hold the theme-aware hero.
+Each featured-build link above leads to that system's own runnable quickstart.
+
+Licensed under the [MIT License](LICENSE).
+
+Contact: **atulswaggalicious@gmail.com**
