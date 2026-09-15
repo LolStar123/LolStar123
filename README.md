@@ -1,11 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Atul Kanodia- systems that ingest, model, verify, and release across four featured builds." width="100%">
+  <img src="assets/banner-light.svg" alt="Atul Kanodia- systems that ingest, model, verify, and release across five featured builds." width="100%">
 </picture>
 
 # Systems that leave evidence
 
-This is the source for my GitHub profile and an index of four end-to-end systems.
+This is the source for my GitHub profile and an index of five systems.
 They turn messy external inputs into useful actions, media, experiments, or ratings.
 The difficult part is the layer between those points: constrained models, replayable
 data, independent checks, and human release gates.
@@ -13,7 +13,21 @@ data, independent checks, and human release gates.
 I study Economics at UCL and build the engineering around decisions that need to be
 explainable after the run, not just impressive during it.
 
-## Featured builds
+## Featured: [HALO](https://github.com/LolStar123/halo)
+
+A Windows meeting helper with audio transcription, selected-screen context and a
+sentence reader beside the full response. Independent cue and answer lanes keep
+short prompts available while longer responses stream. Local meeting notes ground
+audio responses; cancellation and question IDs keep stale responses out of the view.
+
+[![HALO meeting helper, showing actual Qt components with synthetic meeting text](https://raw.githubusercontent.com/LolStar123/halo/main/docs/meeting-preview.png)](https://github.com/LolStar123/halo)
+
+`Python` `PySide6` `streaming audio` `35 focused tests`
+
+[Source, preview and setup](https://github.com/LolStar123/halo). The preview needs
+no model calls. Live meeting evaluation and simpler installation remain in progress.
+
+## More builds
 
 <table>
 <tr>
@@ -66,7 +80,7 @@ the same history can be replayed with new parameters.
 </tr>
 </table>
 
-## One operating pattern, four outputs
+## One operating pattern, five outputs
 
 ```mermaid
 flowchart LR
@@ -75,23 +89,27 @@ flowchart LR
         I2["Papers + market data"]
         I3["Paper-traced signals"]
         I4["TfL status feeds"]
+        I5["Audio + meeting notes"]
     end
     subgraph systems["System under test"]
         S1["Baxter<br/>triage + orchestration"]
         S2["Reels Factory<br/>constrain + backtest"]
         S3["Markets<br/>shared walk-forward engine"]
         S4["TfL Reliability<br/>snapshot + event detection"]
+        S5["HALO<br/>streaming + context"]
     end
     subgraph proof["Proof before output"]
         P1["Independent verifier<br/>approved action"]
         P2["Fact-check + pixel QC<br/>approval-pending reel"]
         P3["Comparable metrics<br/>ranked CSV"]
         P4["Replayable scoring<br/>rating CSV"]
+        P5["Question identity + cancellation<br/>reading overlay"]
     end
     I1 --> S1 --> P1
     I2 --> S2 --> P2
     I3 --> S3 --> P3
     I4 --> S4 --> P4
+    I5 --> S5 --> P5
 ```
 
 ## Working set
