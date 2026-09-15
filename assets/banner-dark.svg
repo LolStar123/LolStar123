@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">Atul Kanodia- systems that leave evidence</title>
-  <desc id="desc">A dark instrumentation panel indexing four builds: Baxter, Reels Factory, Markets, and TfL Reliability.</desc>
+  <desc id="desc">A dark instrumentation panel indexing five builds: HALO, Baxter, Reels Factory, Markets, and TfL Reliability.</desc>
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#f5f1e8" stroke-opacity=".028"/>
@@ -14,8 +14,8 @@
   <style>
     .display{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
     .utility{font-family:ui-monospace,"SFMono-Regular",Consolas,"Liberation Mono",monospace}
-    .row{opacity:0;animation:enter .55s cubic-bezier(.2,.7,.2,1) forwards}
-    .r1{animation-delay:.25s}.r2{animation-delay:.42s}.r3{animation-delay:.59s}.r4{animation-delay:.76s}
+    .row{opacity:1;animation:enter .55s cubic-bezier(.2,.7,.2,1) forwards}
+    .r1{animation-delay:.25s}.r2{animation-delay:.42s}.r3{animation-delay:.59s}.r4{animation-delay:.76s}.r5{animation-delay:.93s}
     .trace{stroke-dasharray:88 430;animation:trace 4.8s linear infinite}
     .cursor{animation:blink 1.15s steps(1) infinite}
     @keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
@@ -30,7 +30,7 @@
 
   <g class="utility" font-size="12" letter-spacing="1.8">
     <text x="54" y="59" fill="#e3b341">PROFILE / SYSTEMS INDEX</text>
-    <text x="1146" y="59" text-anchor="end" fill="#89919b">04 BUILDS</text>
+    <text x="1146" y="59" text-anchor="end" fill="#89919b">05 BUILDS</text>
   </g>
   <path d="M54 75H1146" stroke="#2a3038"/>
   <path d="M54 75H282" stroke="#e3b341" stroke-width="2"/>
@@ -51,32 +51,39 @@
 
   <g class="utility">
     <g class="row r1">
-      <circle cx="489" cy="119" r="4" fill="#e3b341"/>
-      <path d="M493 119H522" stroke="#59491f"/>
-      <text x="536" y="116" font-size="16" font-weight="700" fill="#f5f1e8">BAXTER</text>
-      <text x="536" y="137" font-size="12" fill="#89919b">MULTI-CHANNEL OPERATIONS</text>
-      <text x="1139" y="126" text-anchor="end" font-size="12" fill="#e3b341">GATED + VERIFIED</text>
+      <circle cx="489" cy="113" r="4" fill="#e3b341"/>
+      <path d="M493 113H522" stroke="#59491f"/>
+      <text x="536" y="110" font-size="16" font-weight="700" fill="#f5f1e8">HALO</text>
+      <text x="536" y="127" font-size="12" fill="#89919b">MEETING HELPER</text>
+      <text x="1139" y="120" text-anchor="end" font-size="12" fill="#e3b341">AUDIO + CONTEXT</text>
     </g>
     <g class="row r2">
-      <circle cx="489" cy="164" r="4" fill="#e3b341"/>
-      <path d="M493 164H522" stroke="#59491f"/>
-      <text x="536" y="161" font-size="16" font-weight="700" fill="#f5f1e8">REELS FACTORY</text>
-      <text x="536" y="182" font-size="12" fill="#89919b">RESEARCH TO MEDIA</text>
-      <text x="1139" y="171" text-anchor="end" font-size="12" fill="#e3b341">QC + APPROVAL</text>
+      <circle cx="489" cy="148" r="4" fill="#e3b341"/>
+      <path d="M493 148H522" stroke="#59491f"/>
+      <text x="536" y="145" font-size="16" font-weight="700" fill="#f5f1e8">BAXTER</text>
+      <text x="536" y="162" font-size="12" fill="#89919b">MULTI-CHANNEL OPERATIONS</text>
+      <text x="1139" y="155" text-anchor="end" font-size="12" fill="#e3b341">GATED + VERIFIED</text>
     </g>
     <g class="row r3">
-      <circle cx="489" cy="209" r="4" fill="#e3b341"/>
-      <path d="M493 209H522" stroke="#59491f"/>
-      <text x="536" y="206" font-size="16" font-weight="700" fill="#f5f1e8">MARKETS</text>
-      <text x="536" y="227" font-size="12" fill="#89919b">50 PAPER-TRACED SIGNALS</text>
-      <text x="1139" y="216" text-anchor="end" font-size="12" fill="#e3b341">WALK-FORWARD</text>
+      <circle cx="489" cy="183" r="4" fill="#e3b341"/>
+      <path d="M493 183H522" stroke="#59491f"/>
+      <text x="536" y="180" font-size="16" font-weight="700" fill="#f5f1e8">REELS FACTORY</text>
+      <text x="536" y="197" font-size="12" fill="#89919b">RESEARCH TO MEDIA</text>
+      <text x="1139" y="190" text-anchor="end" font-size="12" fill="#e3b341">QC + APPROVAL</text>
     </g>
     <g class="row r4">
-      <circle cx="489" cy="254" r="4" fill="#e3b341"/>
-      <path d="M493 254H522" stroke="#59491f"/>
-      <text x="536" y="251" font-size="16" font-weight="700" fill="#f5f1e8">TFL RELIABILITY</text>
-      <text x="536" y="272" font-size="12" fill="#89919b">STATUS SNAPSHOTS TO RATINGS</text>
-      <text x="1139" y="261" text-anchor="end" font-size="12" fill="#e3b341">REPLAYABLE</text>
+      <circle cx="489" cy="218" r="4" fill="#e3b341"/>
+      <path d="M493 218H522" stroke="#59491f"/>
+      <text x="536" y="215" font-size="16" font-weight="700" fill="#f5f1e8">MARKETS</text>
+      <text x="536" y="232" font-size="12" fill="#89919b">50 PAPER-TRACED SIGNALS</text>
+      <text x="1139" y="225" text-anchor="end" font-size="12" fill="#e3b341">WALK-FORWARD</text>
+    </g>
+    <g class="row r5">
+      <circle cx="489" cy="253" r="4" fill="#e3b341"/>
+      <path d="M493 253H522" stroke="#59491f"/>
+      <text x="536" y="250" font-size="16" font-weight="700" fill="#f5f1e8">TFL RELIABILITY</text>
+      <text x="536" y="267" font-size="12" fill="#89919b">STATUS SNAPSHOTS TO RATINGS</text>
+      <text x="1139" y="260" text-anchor="end" font-size="12" fill="#e3b341">REPLAYABLE</text>
     </g>
   </g>
 </svg>
