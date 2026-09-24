@@ -1,5 +1,9 @@
 <a href="https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site">
   <picture>
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile-still.svg">
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-light-mobile-still.svg">
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-dark-still.svg">
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-light-still.svg">
     <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile.svg">
     <source media="(max-width: 600px)" srcset="assets/hero-light-mobile.svg">
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">

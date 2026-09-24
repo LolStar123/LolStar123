@@ -8,7 +8,7 @@ This profile follows Atul's existing personal site, not a dashboard template. Th
 - Nothing You Could Do for handwritten headings, Newsreader for short captions. Both are SIL OFL fonts copied from the personal site with their licenses. SVG text is outlined for consistent rendering without external font requests. Every linked illustration has descriptive HTML alt text.
 - One hillside hero, then six linked sketches. No statistics badges, status claims, fake counters, charts of commits or decorative technology logos.
 - Sketches are 390 CSS pixels wide on desktop and shrink to their container on phones. They wrap naturally into a single column. A separate mobile hero preserves legibility. Native text navigation remains outside the artwork.
-- The meowl strains and the rock nudges on a slow cycle; eyes blink occasionally. Motion is decorative and disabled by `prefers-reduced-motion`. Project drawings remain still. No hover or sound claims: GitHub sanitizes README markup.
+- The meowl strains and the rock nudges on a slow cycle; eyes blink occasionally. Motion is decorative. The HTML picture selects an entirely static SVG for `prefers-reduced-motion`, avoiding inconsistent media-query propagation inside SVG images. Project drawings remain still. No hover or sound claims: GitHub sanitizes README markup.
 - Original editable vector illustrations live in `scripts/draw_profile.py`. Fonts are the only borrowed assets. No external image service or workflow is required.
 
 ## Acceptance checklist
