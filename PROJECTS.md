@@ -1,6 +1,6 @@
 # the project shelf
 
-[back to my profile](README.md) ? [the meowl site](https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site)
+[back to my profile](README.md) · [the meowl site](https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site)
 
 ## research & markets
 
