@@ -148,12 +148,12 @@ def card(kind, title, first, second, theme, mobile=False):
 def main():
     for theme in THEMES:
         for mobile in (False, True):
-            name = f'hero-{theme}{"-mobile" if mobile else ""}.svg'
+            name = f'header-{theme}{"-mobile" if mobile else ""}.svg'
             (ROOT / 'assets' / name.replace('.svg', '-animated.svg')).write_text(hero(theme, mobile), encoding='utf-8')
             (ROOT / 'assets' / name.replace('.svg', '-still.svg')).write_text(hero(theme, mobile, animated=False), encoding='utf-8')
         for kind, title, first, second in CARDS:
             for mobile in (False, True):
-                name = f'{kind}-{theme}{"-mobile" if mobile else ""}.svg'
+                name = f'row-{kind}-{theme}{"-mobile" if mobile else ""}.svg'
                 (ROOT / 'assets' / name).write_text(card(kind, title, first, second, theme, mobile), encoding='utf-8')
 
 
