@@ -20,6 +20,9 @@ Meeting notes you can question, trace back to their source, and read one sentenc
 **[botato](https://lolstar123.github.io/botato-navigation/)**  
 Draw an obstacle. Watch a small meowl work out another way through.
 
+**[codex reset tracker](https://lolstar123.github.io/codex-reset-tracker/)**  
+Codex reset announcements and replies, a live check key, and a calendar of full and banked resets.
+
 ### the rest of the desk
 
 [research & markets](PROJECTS.md#research--markets) ? [london & everyday data](PROJECTS.md#london--everyday-data) ? [games & experiments](PROJECTS.md#games--experiments) ? [assistants & small tools](PROJECTS.md#assistants--small-tools)

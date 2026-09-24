@@ -35,6 +35,7 @@
 | --- | --- | --- |
 | [halo](https://github.com/LolStar123/halo) | A Windows meeting assistant with notes, audio and a reading overlay. | [notes demo](https://lolstar123.github.io/halo/) |
 | [baxter](https://github.com/LolStar123/baxter) | Coordinate work and verify its outputs before handing it back. | [workflow desk](https://lolstar123.github.io/baxter/) |
+| [codex reset tracker](https://github.com/LolStar123/codex-reset-tracker) | Track reset announcements and replies, with live checks and a reset calendar. | [live tracker](https://lolstar123.github.io/codex-reset-tracker/) |
 | [workflow checks](https://github.com/LolStar123/workflow-checks) | Check changed files, documentation links, Python syntax and credential patterns. | source & tests |
 
 The Tube tracker collects live observations. Other datasets show their collection dates. HALO's browser demo retrieves notes locally; its full desktop app has separate setup. Game planners export configurations without modifying your game.
