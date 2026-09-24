@@ -1,56 +1,15 @@
-<a href="https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile-still.svg">
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-light-mobile-still.svg">
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-dark-still.svg">
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-light-still.svg">
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile-animated.svg">
-    <source media="(max-width: 600px)" srcset="assets/hero-light-mobile-animated.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark-animated.svg">
-    <img src="assets/hero-light-animated.svg" width="960" alt="Atul Kanodia. Economics at UCL. Games, data and things I made. A little further: a scribbled meowl pushes a boulder uphill. Open my personal website.">
-  </picture>
-</a>
+<p><a href="https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site"><picture><source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile-still.svg?v=align-1"><source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-light-mobile-still.svg?v=align-1"><source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-dark-still.svg?v=align-1"><source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-light-still.svg?v=align-1"><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile-animated.svg?v=align-1"><source media="(max-width: 600px)" srcset="assets/hero-light-mobile-animated.svg?v=align-1"><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark-animated.svg?v=align-1"><img src="assets/hero-light-animated.svg?v=align-1" width="960" alt="Atul Kanodia. Economics at UCL. Games, data and things I made. A little further: a scribbled meowl pushes a boulder uphill. Open my personal website."></picture></a></p>
 
 [my corner of the internet](https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site) · [the whole project shelf](PROJECTS.md) · [say hello](mailto:atulswaggalicious@gmail.com)
 
 ### a few things to play with
 
-<a href="https://lolstar123.github.io/tfl-reliability/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/tube-dark.svg">
-    <img src="assets/tube-light.svg" width="390" alt="Tube reliability: compare eleven Underground lines. Open the live tracker.">
-  </picture>
-</a>
-<a href="https://lolstar123.github.io/codex-reset-tracker/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/reset-dark.svg">
-    <img src="assets/reset-light.svg" width="390" alt="Codex reset tracker: Tibo's announcements, replies and a check key. Open the live site.">
-  </picture>
-</a>
-<a href="https://lolstar123.github.io/poe-item-pricer/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/sheetato-dark.svg">
-    <img src="assets/sheetato-light.svg" width="390" alt="Sheetato: browse game item prices, expected value and risk. Open the dataset browser.">
-  </picture>
-</a>
-<a href="https://lolstar123.github.io/botato-navigation/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/botato-dark.svg">
-    <img src="assets/botato-light.svg" width="390" alt="Botato: draw an obstacle and watch a meowl find another route. Open the pathfinding demo.">
-  </picture>
-</a>
-<a href="https://lolstar123.github.io/halo/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/halo-dark.svg">
-    <img src="assets/halo-light.svg" width="390" alt="HALO: question meeting notes and trace answers to their source. Open the notes demo.">
-  </picture>
-</a>
-<a href="https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/corner-dark.svg">
-    <img src="assets/corner-light.svg" width="390" alt="The meowl site: my personal notebook of projects, with a hillside and a stubborn boulder. Visit the site.">
-  </picture>
-</a>
+<p><a href="https://lolstar123.github.io/tfl-reliability/"><picture><source media="(prefers-color-scheme: dark) and (max-width: 1011px)" srcset="assets/tube-dark-mobile.svg?v=align-1"><source media="(max-width: 1011px)" srcset="assets/tube-light-mobile.svg?v=align-1"><source media="(prefers-color-scheme: dark)" srcset="assets/tube-dark.svg?v=align-1"><img src="assets/tube-light.svg?v=align-1" width="960" alt="Tube reliability: compare eleven Underground lines. Open the live tracker."></picture></a></p>
+<p><a href="https://lolstar123.github.io/codex-reset-tracker/"><picture><source media="(prefers-color-scheme: dark) and (max-width: 1011px)" srcset="assets/reset-dark-mobile.svg?v=align-1"><source media="(max-width: 1011px)" srcset="assets/reset-light-mobile.svg?v=align-1"><source media="(prefers-color-scheme: dark)" srcset="assets/reset-dark.svg?v=align-1"><img src="assets/reset-light.svg?v=align-1" width="960" alt="Codex reset tracker: Tibo's announcements, replies and a check key. Open the live site."></picture></a></p>
+<p><a href="https://lolstar123.github.io/poe-item-pricer/"><picture><source media="(prefers-color-scheme: dark) and (max-width: 1011px)" srcset="assets/sheetato-dark-mobile.svg?v=align-1"><source media="(max-width: 1011px)" srcset="assets/sheetato-light-mobile.svg?v=align-1"><source media="(prefers-color-scheme: dark)" srcset="assets/sheetato-dark.svg?v=align-1"><img src="assets/sheetato-light.svg?v=align-1" width="960" alt="Sheetato: browse game item prices, expected value and risk. Open the dataset browser."></picture></a></p>
+<p><a href="https://lolstar123.github.io/botato-navigation/"><picture><source media="(prefers-color-scheme: dark) and (max-width: 1011px)" srcset="assets/botato-dark-mobile.svg?v=align-1"><source media="(max-width: 1011px)" srcset="assets/botato-light-mobile.svg?v=align-1"><source media="(prefers-color-scheme: dark)" srcset="assets/botato-dark.svg?v=align-1"><img src="assets/botato-light.svg?v=align-1" width="960" alt="Botato: draw an obstacle and watch a meowl find another route. Open the pathfinding demo."></picture></a></p>
+<p><a href="https://lolstar123.github.io/halo/"><picture><source media="(prefers-color-scheme: dark) and (max-width: 1011px)" srcset="assets/halo-dark-mobile.svg?v=align-1"><source media="(max-width: 1011px)" srcset="assets/halo-light-mobile.svg?v=align-1"><source media="(prefers-color-scheme: dark)" srcset="assets/halo-dark.svg?v=align-1"><img src="assets/halo-light.svg?v=align-1" width="960" alt="HALO: question meeting notes and trace answers to their source. Open the notes demo."></picture></a></p>
+<p><a href="https://atul-kanodia-fieldnotes.atulswaggalicious.chatgpt.site"><picture><source media="(prefers-color-scheme: dark) and (max-width: 1011px)" srcset="assets/corner-dark-mobile.svg?v=align-1"><source media="(max-width: 1011px)" srcset="assets/corner-light-mobile.svg?v=align-1"><source media="(prefers-color-scheme: dark)" srcset="assets/corner-dark.svg?v=align-1"><img src="assets/corner-light.svg?v=align-1" width="960" alt="The meowl site: my personal notebook of projects, with a hillside and a stubborn boulder. Visit the site."></picture></a></p>
 
 <details>
 <summary>there's more on the desk</summary>

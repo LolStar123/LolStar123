@@ -13,6 +13,11 @@ THEMES = {
     'light': ('#eeeae0', '#3b3a36', '#69675e', '#60715d', '#936957'),
     'dark': ('#20241f', '#eeeae0', '#c3c4b7', '#b6c6a6', '#d6a18a'),
 }
+TEXT_LEFT = 44
+DOODLE_CENTERS = {
+    'tube': (342, 63), 'reset': (346, 70), 'sheetato': (345, 61),
+    'botato': (344, 66), 'halo': (341, 69), 'corner': (333, 72),
+}
 
 
 def lettering(words, x, y, size, font='pen', color='var(--ink)'):
@@ -82,16 +87,16 @@ def hero(theme, mobile=False, animated=True):
     art += lettering('still pushing.', 534, 181, 22, color='var(--muted)')
     art += line('M599 192Q605 206 611 211M605 208L611 212L612 205', 'var(--muted)', 1)
     if mobile:
-        body = lettering('atul kanodia.', 28, 64, 43)
-        body += lettering('economics at ucl.', 31, 101, 24, 'reader')
-        body += lettering('a little further.', 29, 170, 38)
+        body = lettering('atul kanodia.', 32, 64, 43)
+        body += lettering('economics at ucl.', 32, 101, 24, 'reader')
+        body += lettering('a little further.', 32, 170, 38)
         body += '<g transform="translate(-402 77) scale(1.02)">' + art + '</g>'
-        body += lettering('games, data & things i made.', 30, 438, 23, 'reader')
+        body += lettering('games, data & things i made.', 32, 438, 23, 'reader')
         return svg(body, 520, 468, theme, 'Atul Kanodia. Economics at UCL. A scribbled meowl pushes a boulder uphill.', animated)
-    body = lettering('atul kanodia.', 40, 82, 55)
-    body += lettering('economics at ucl.', 44, 122, 25, 'reader')
-    body += lettering('a little further.', 39, 231, 54)
-    body += lettering('games, data & things i made.', 44, 270, 24, 'reader')
+    body = lettering('atul kanodia.', TEXT_LEFT, 82, 55)
+    body += lettering('economics at ucl.', TEXT_LEFT, 122, 25, 'reader')
+    body += lettering('a little further.', TEXT_LEFT, 231, 54)
+    body += lettering('games, data & things i made.', TEXT_LEFT, 270, 24, 'reader')
     return svg(art + body, 960, 370, theme, 'Atul Kanodia. Economics at UCL. A little further. A scribbled meowl pushes a boulder uphill.', animated)
 
 
@@ -119,15 +124,25 @@ CARDS = [
 ]
 
 
-def card(kind, title, first, second, theme):
-    body = line('M19 13L416 10L421 181L15 184Z', 'var(--muted)', 1)
-    body += line('M20 183Q84 178 124 183T249 181', 'var(--muted)', .7, 'opacity=".4"')
-    body += lettering(title, 30, 58, 31)
-    body += lettering(first, 31, 121, 23, 'reader')
-    body += lettering(second, 31, 151, 21, 'reader', 'var(--muted)')
-    body += doodle(kind)
-    body += line('M384 160L400 158L395 153M400 158L394 165', 'var(--ink)', 1.6)
-    return svg(body, 440, 198, theme, f'{title}: {first} {second}')
+def card(kind, title, first, second, theme, mobile=False):
+    center_x, center_y = DOODLE_CENTERS[kind]
+    if mobile:
+        width, height = 520, 188
+        body = line('M14 11Q260 9 506 12L506 175Q260 178 14 176Z', 'var(--muted)', .8)
+        body += lettering(title, 32, 58, 33)
+        body += lettering(first, 32, 114, 25, 'reader')
+        body += lettering(second, 32, 145, 23, 'reader', 'var(--muted)')
+        body += f'<g transform="translate(433 52) scale(.72) translate({-center_x} {-center_y})">{doodle(kind)}</g>'
+        body += line('M466 159H484L478 153M484 159L478 165', width=1.5)
+    else:
+        width, height = 960, 132
+        body = line('M16 11Q480 9 944 12L944 120Q480 122 16 120Z', 'var(--muted)', .8)
+        body += lettering(title, TEXT_LEFT, 77, 33)
+        body += lettering(first, 326, 57, 24, 'reader')
+        body += lettering(second, 326, 89, 22, 'reader', 'var(--muted)')
+        body += f'<g transform="translate(820 66) scale(.82) translate({-center_x} {-center_y})">{doodle(kind)}</g>'
+        body += line('M891 66H915L907 59M915 66L907 73', width=1.6)
+    return svg(body, width, height, theme, f'{title}: {first} {second}')
 
 
 def main():
@@ -137,7 +152,9 @@ def main():
             (ROOT / 'assets' / name.replace('.svg', '-animated.svg')).write_text(hero(theme, mobile), encoding='utf-8')
             (ROOT / 'assets' / name.replace('.svg', '-still.svg')).write_text(hero(theme, mobile, animated=False), encoding='utf-8')
         for kind, title, first, second in CARDS:
-            (ROOT / 'assets' / f'{kind}-{theme}.svg').write_text(card(kind, title, first, second, theme), encoding='utf-8')
+            for mobile in (False, True):
+                name = f'{kind}-{theme}{"-mobile" if mobile else ""}.svg'
+                (ROOT / 'assets' / name).write_text(card(kind, title, first, second, theme, mobile), encoding='utf-8')
 
 
 if __name__ == '__main__':
