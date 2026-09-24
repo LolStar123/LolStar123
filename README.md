@@ -4,10 +4,10 @@
     <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-light-mobile-still.svg">
     <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-dark-still.svg">
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-light-still.svg">
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile.svg">
-    <source media="(max-width: 600px)" srcset="assets/hero-light-mobile.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-    <img src="assets/hero-light.svg" width="960" alt="Atul Kanodia. Economics at UCL. Games, data and things I made. A little further: a scribbled meowl pushes a boulder uphill. Open my personal website.">
+    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-dark-mobile-animated.svg">
+    <source media="(max-width: 600px)" srcset="assets/hero-light-mobile-animated.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark-animated.svg">
+    <img src="assets/hero-light-animated.svg" width="960" alt="Atul Kanodia. Economics at UCL. Games, data and things I made. A little further: a scribbled meowl pushes a boulder uphill. Open my personal website.">
   </picture>
 </a>
 
