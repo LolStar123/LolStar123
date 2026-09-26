@@ -88,16 +88,16 @@ def hero(theme, mobile=False, animated=True):
     art += line('M599 192Q605 206 611 211M605 208L611 212L612 205', 'var(--muted)', 1)
     if mobile:
         body = lettering('atul kanodia.', 32, 64, 43)
-        body += lettering('economics at ucl.', 32, 101, 24, 'reader')
+        body += lettering('games, data & things i made.', 32, 101, 23, 'reader')
         body += lettering('a little further.', 32, 170, 38)
         body += '<g transform="translate(-402 77) scale(1.02)">' + art + '</g>'
-        body += lettering('games, data & things i made.', 32, 438, 23, 'reader')
-        return svg(body, 520, 468, theme, 'Atul Kanodia. Economics at UCL. A scribbled meowl pushes a boulder uphill.', animated)
+
+        return svg(body, 520, 468, theme, 'Atul Kanodia. Games, data and things he made. A scribbled meowl pushes a boulder uphill.', animated)
     body = lettering('atul kanodia.', TEXT_LEFT, 82, 55)
-    body += lettering('economics at ucl.', TEXT_LEFT, 122, 25, 'reader')
+    body += lettering('games, data & things i made.', TEXT_LEFT, 122, 24, 'reader')
     body += lettering('a little further.', TEXT_LEFT, 231, 54)
-    body += lettering('games, data & things i made.', TEXT_LEFT, 270, 24, 'reader')
-    return svg(art + body, 960, 370, theme, 'Atul Kanodia. Economics at UCL. A little further. A scribbled meowl pushes a boulder uphill.', animated)
+
+    return svg(art + body, 960, 370, theme, 'Atul Kanodia. Games, data and things he made. Just a little further. A scribbled meowl pushes a boulder uphill.', animated)
 
 
 def doodle(kind):
@@ -117,10 +117,10 @@ def doodle(kind):
 CARDS = [
     ('tube', 'tube reliability', 'which line lets you down?', 'eleven lines, one leaderboard.'),
     ('reset', 'codex resets', 'has tibo said anything yet?', 'announcements, replies & a check key.'),
-    ('sheetato', 'sheetato', 'a game got me into statistics.', 'item prices, odds & expensive mistakes.'),
+    ('sheetato', 'poe economy', 'prices, odds & risk.', 'i like optimising small things.'),
     ('botato', 'botato', 'put something in its way.', 'a small meowl finds another route.'),
     ('halo', 'halo', 'what did we agree again?', 'meeting notes you can trace back.'),
-    ('corner', 'the meowl site', 'the rest of this notebook.', 'a hillside. a boulder. a few distractions.'),
+    ('corner', 'just a little further', 'the rest of this notebook.', 'a hillside. a boulder. a few distractions.'),
 ]
 
 
@@ -137,9 +137,11 @@ def card(kind, title, first, second, theme, mobile=False):
     else:
         width, height = 960, 132
         body = line('M16 11Q480 9 944 12L944 120Q480 122 16 120Z', 'var(--muted)', .8)
-        body += lettering(title, TEXT_LEFT, 77, 33)
-        body += lettering(first, 326, 57, 24, 'reader')
-        body += lettering(second, 326, 89, 22, 'reader', 'var(--muted)')
+        title_size = 26 if kind == 'corner' else 33
+        caption_x = 365 if kind == 'corner' else 326
+        body += lettering(title, TEXT_LEFT, 77, title_size)
+        body += lettering(first, caption_x, 57, 24, 'reader')
+        body += lettering(second, caption_x, 89, 22, 'reader', 'var(--muted)')
         body += f'<g transform="translate(820 66) scale(.82) translate({-center_x} {-center_y})">{doodle(kind)}</g>'
         body += line('M891 66H915L907 59M915 66L907 73', width=1.6)
     return svg(body, width, height, theme, f'{title}: {first} {second}')

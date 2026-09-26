@@ -1,6 +1,6 @@
 # A page from the same notebook
 
-This profile follows Atul's existing personal site, not a dashboard template. The reference is the paper hillside, continuous pen drawing, handwritten name and meowl in `LolStar123/meowl-corner`. Keep GitHub navigation native; the README is the canvas.
+This profile follows Atul's existing personal site, not a dashboard template. The reference is the paper hillside, continuous pen drawing, handwritten name and meowl in `LolStar123/just-a-little-further`. Keep GitHub navigation native; the README is the canvas.
 
 ## Visual rules
 
