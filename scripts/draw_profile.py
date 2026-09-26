@@ -89,13 +89,13 @@ def hero(theme, mobile=False, animated=True):
     if mobile:
         body = lettering('atul kanodia.', 32, 64, 43)
         body += lettering('games, data & things i made.', 32, 101, 23, 'reader')
-        body += lettering('a little further.', 32, 170, 38)
+        body += lettering('just a little further.', 32, 170, 38)
         body += '<g transform="translate(-402 77) scale(1.02)">' + art + '</g>'
 
         return svg(body, 520, 468, theme, 'Atul Kanodia. Games, data and things he made. A scribbled meowl pushes a boulder uphill.', animated)
     body = lettering('atul kanodia.', TEXT_LEFT, 82, 55)
     body += lettering('games, data & things i made.', TEXT_LEFT, 122, 24, 'reader')
-    body += lettering('a little further.', TEXT_LEFT, 231, 54)
+    body += lettering('just a little further.', TEXT_LEFT, 231, 54)
 
     return svg(art + body, 960, 370, theme, 'Atul Kanodia. Games, data and things he made. Just a little further. A scribbled meowl pushes a boulder uphill.', animated)
 
