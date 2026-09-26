@@ -30,7 +30,7 @@
 
 | project | what it does | try it |
 | --- | --- | --- |
-| [halo](https://github.com/LolStar123/halo) | Uses personal context to prepare answers during meetings and keeps each answer traceable to its notes. | [demo](https://lolstar123.github.io/halo/) |
+| [halo](https://github.com/LolStar123/halo) | Uses personal context and a mix of local and hosted LLMs to provide contextualised answers during meetings. | [demo](https://lolstar123.github.io/halo/) |
 | [baxter](https://github.com/LolStar123/baxter) | Turns a Discord bot into an LLM harness that scopes, schedules, executes and verifies work. | [demo](https://lolstar123.github.io/baxter/) |
 | [codex reset tracker](https://github.com/LolStar123/codex-reset-tracker) | Tracks reset announcements, replies and live checks on one timeline. | [demo](https://lolstar123.github.io/codex-reset-tracker/) |
 | [workflow checks](https://github.com/LolStar123/workflow-checks) | Checks changed files, documentation links, Python syntax and credential patterns. | source |
