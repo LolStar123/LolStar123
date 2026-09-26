@@ -14,8 +14,8 @@
 <details>
 <summary>there's more on the desk</summary>
 
-[research & markets](PROJECTS.md#research--markets) · [london & everyday data](PROJECTS.md#london--everyday-data) · [games & experiments](PROJECTS.md#games--experiments) · [assistants & small tools](PROJECTS.md#assistants--small-tools)
+[research & markets](PROJECTS.md#research--markets) · [python data pipelines](PROJECTS.md#python-data-pipelines) · [games](PROJECTS.md#games) · [assistants & small tools](PROJECTS.md#assistants--small-tools)
 
-The [full shelf](PROJECTS.md) keeps the demos, source code and project scope together. The Tube tracker was built with Benjamin Toze at QuantiHack.
+The [full shelf](PROJECTS.md) keeps the demos, source code and project scope together. The Tube tracker was made for [QuantiHack](https://devpost.com/software/tfl-elo-tracker).
 
 </details>

@@ -1,21 +1,21 @@
 # the project shelf
 
-[back to my profile](README.md) ? [just a little further](https://lolstar123.github.io/just-a-little-further/)
+[back to my profile](README.md) · [just a little further](https://lolstar123.github.io/just-a-little-further/)
 
 ## research & markets
 
 | project | what it does | try it |
 | --- | --- | --- |
-| [quant research & backtesting](https://github.com/LolStar123/quant-research-scraper) | Collects academic papers with sources, then forward-tests market ideas in Python with trading costs and unseen windows. | [demo](https://lolstar123.github.io/quant-research-scraper/) ? [backtesting code](https://github.com/LolStar123/markets-backtesting) |
-| [poe economy scraper](https://github.com/LolStar123/poe-item-pricer) | Logs Path of Exile prices through rotating proxies and turns thousands of variants into profit and risk statistics. | [demo](https://lolstar123.github.io/poe-item-pricer/) |
-| [hardware hunt](https://github.com/LolStar123/hardware-hunt) | Calculates liquidation-auction buying limits after fees, taxes, fault risk and resale value. | [demo](https://lolstar123.github.io/hardware-hunt/) |
+| [quant research & backtesting](https://github.com/LolStar123/quant-research-scraper) | Collects academic papers with sources, then forward-tests market ideas in Python with trading costs and unseen windows. | [demo](https://lolstar123.github.io/quant-research-scraper/) · [backtesting code](https://github.com/LolStar123/markets-backtesting) |
+| [poe economy scraper](https://github.com/LolStar123/poe-item-pricer) | Rotates a proxy and scrapes the Path of Exile virtual economy to log profit and risk statistics. | [demo](https://lolstar123.github.io/poe-item-pricer/) |
+| [hardware hunt](https://github.com/LolStar123/hardware-hunt) | A Python-to-Codex pipeline that weighs fees, taxes and margin to optimise auction flipping. | [demo](https://lolstar123.github.io/hardware-hunt/) |
 | [reels factory](https://github.com/LolStar123/reels-factory) | Turns quantitative research and backtests into narrated vertical videos with review gates. | source |
 
-## london
+## python data pipelines
 
 | project | what it does | try it |
 | --- | --- | --- |
-| [tube reliability](https://github.com/LolStar123/tfl-reliability) + [commute optimiser](https://github.com/LolStar123/london-commute-calculator) | Ranks all eleven Tube lines like chess Elo, then compares PAYG, caps and passes for an actual working week. Built with Benjamin Toze at QuantiHack. | [tube demo](https://lolstar123.github.io/tfl-reliability/) ? [commute demo](https://lolstar123.github.io/london-commute-calculator/) |
+| [tube reliability](https://github.com/LolStar123/tfl-reliability) + [commute optimiser](https://github.com/LolStar123/london-commute-calculator) | Ranks all eleven Tube lines like chess Elo, then compares PAYG, caps and passes for an actual working week. Made for [QuantiHack](https://devpost.com/software/tfl-elo-tracker). | [tube demo](https://lolstar123.github.io/tfl-reliability/) · [commute demo](https://lolstar123.github.io/london-commute-calculator/) |
 
 ## games
 
