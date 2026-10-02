@@ -119,7 +119,7 @@ CARDS = [
     ('reset', 'codex resets', 'has tibo said anything yet?', 'announcements, replies & a check key.'),
     ('sheetato', 'poe economy', 'prices, odds & risk.', 'i like optimising small things.'),
     ('botato', 'botato', 'put something in its way.', 'a small meowl finds another route.'),
-    ('halo', 'halo', 'what did we agree again?', 'meeting notes you can trace back.'),
+    ('halo', 'halo', 'keep up with the meeting.', 'personal context. local & hosted llms.'),
     ('corner', 'just a little further', 'the rest of this notebook.', 'a hillside. a boulder. a few distractions.'),
 ]
 
